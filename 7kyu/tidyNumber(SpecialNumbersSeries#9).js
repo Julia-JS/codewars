@@ -32,7 +32,7 @@
 
 function tidyNumber(n){
   for (let i = 1; i < n.toString().length; i++) {
-    if (n.toString().charAt(i) < n.toString().charAt(i - 1)) {
+    if (n.toString()[i] < n.toString()[i - 1]) {
       return false;
     }
   }
