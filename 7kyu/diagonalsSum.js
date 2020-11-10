@@ -9,3 +9,12 @@
 //   ] );
 //
 // returns -> 30 // 1 + 5 + 9 + 3 + 5 + 7
+
+function sum(matrix) {
+  let sum = 0;
+  for (let i = 0; i < matrix.length; i++) {
+    sum += matrix[i][i];
+    sum += matrix[matrix.length - 1 - i][i];
+  }
+  return sum;
+}
