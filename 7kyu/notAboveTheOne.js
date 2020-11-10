@@ -9,5 +9,7 @@
 // [ 0, 1, 2, 1, 5, 6, 2, 1, 1, 0 ] => [ [ 0, 1, 1, 1, 1, 0 ], [ 2, 4, 5, 6 ] ]
 
 function binaryCleaner(arr) {
-  return [arr.map(a => a <= 1 ? a : '').filter(a => a !== ''), arr.map((a, i) => a > 1 ? i : '').filter(a => a !== '')]
+  let first = arr.filter(a => a <= 1);
+  let second = arr.map((a, i) => i).filter((a, i) => arr[i] > 1);
+  return [first, second];
 }
