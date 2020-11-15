@@ -7,3 +7,6 @@
 // 3 6 9
 // for given example, the return value should be: [[1,2,3],[2,4,6],[3,6,9]]
 
+multiplicationTable = function(size) {
+  return Array.from({length: size}, (a, i) => Array.from({length: size}, (b, j) => (j + 1) * (i + 1)));
+}
