@@ -16,3 +16,13 @@
 // encryptThis("good") === "103doo"
 // encryptThis("hello world") === "104olle 119drlo"
 
+var encryptThis = function(text) {
+  var arr = text.split(' ');
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > 2) {
+      arr[i] = arr[i].substr(0, 1) + arr[i].substr(arr[i].length - 1) + arr[i].substr(2, arr[i].length - 3) + arr[i].substr(1, 1);
+    }
+    arr[i] = arr[i].charCodeAt(arr[i][0]) + arr[i].substr(1);
+  }
+  return arr.join(' ');
+}
