@@ -20,3 +20,14 @@
 // parts_sums(ls) -> [10037855, 9293730, 9292795, 9292388, 9291934, 9291504, 9291414, 9291270, 2581057, 2580168, 2579358, 0]
 // Notes
 // Some lists can be long.
+
+function partsSums(ls) {
+  var sum = ls.reduce((a, b) => a + b, 0);
+  var arr = [];
+  var step = 0;
+  for (let i = 0; i <= ls.length; i++) {
+    arr.push(sum - step);
+    step += ls[i];
+  }
+  return arr;
+}
