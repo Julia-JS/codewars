@@ -24,3 +24,7 @@ function solve(a,b){
 
   return firstArr.join('') + secondArr.join('');
 };
+
+function solve(a,b){
+  return [...a].map(a => !b.includes(a) ? a : '').concat([...b].map(b => !a.includes(b) ? b : '')).join('');
+};
