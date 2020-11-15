@@ -9,3 +9,7 @@
 function kebabize(str) {
   return str.replace(/[A-Z]/g, c => '-' + c.toLowerCase()).replace(/\d/g, '').replace(/^-/, '');
 }
+
+function kebabize(str) {
+  return str.split(/(?=[A-Z])/).join('-').replace(/\d/g, '').toLowerCase();
+}
