@@ -7,3 +7,7 @@ function count (string) {
   string.split('').map((i) => arr[i] = arr[i] + 1 || 1);
   return arr;
 }
+
+function count (string) {
+  return string.split('').reduce((a, i) => (a[i] = a[i] + 1 || 1, a), {});
+}
