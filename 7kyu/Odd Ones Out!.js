@@ -17,7 +17,5 @@
 // oddOnesOut([1]) = []
 
 function oddOnesOut(nums) {
-  return nums
-    .map(x => [x, nums.filter(y => y === x).length])
-    .filter(a => !(a[1] % 2)).map(a => a[0]);
+  return nums.filter(a => !(nums.filter(b => b === a).length % 2));
 }
