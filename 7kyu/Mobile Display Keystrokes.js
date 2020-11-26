@@ -24,3 +24,8 @@ function mobileKeyboard(str){
   }
   return str.split('').map(a => symbols[a]).reduce((a, b) => a + b, 0);
 }
+
+function mobileKeyboard(str){
+  let symbols = ['*#0123456789', 'adgjmptw', 'behknqux', 'cfilorvy', 'sz'];
+  return str.split('').map(a => symbols.map(b => b.includes(a) ? symbols.indexOf(b) + 1 : null).filter(a => a).join('')).reduce((a, b) => +a + +b, 0);
+}
