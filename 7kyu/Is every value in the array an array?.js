@@ -6,4 +6,4 @@
 // ['1','2'] => false
 // [{1:1},{2:2}] => false
 
-// const arrCheck = value => value.every(a => Array.isArray(a));
+const arrCheck = value => value.every(a => Array.isArray(a));
