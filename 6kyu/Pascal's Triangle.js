@@ -27,3 +27,19 @@ function pascalsTriangle(n) {
 
   return [].concat(...arr);
 }
+
+function pascalsTriangle(n) {
+  let arr = [];
+  let l = 0;
+  for (let i = 0; i < n; i++) {
+    l = arr.length - i;
+    for (let j = 0; j <= i; j++) {
+      if (j === 0 || j === i) {
+        arr.push(1);
+      } else {
+        arr.push(arr[l + j] + arr[l + j - 1]);
+      }
+    }
+  }
+  return arr;
+}
