@@ -2,7 +2,18 @@
 //
 // Could you give the sum of the perimeters of all the squares in a rectangle when there are n + 1 squares disposed in the same manner as in the drawing:
 //
-//   alternative text
+//  ----------------------------------------
+// |               |                        |
+// |               |                        |
+// |       5       |                        |
+// |               |                        |
+// |               |            8           |
+//  ---------------                         |
+// | 1| 1|         |                        |
+//  -----     3    |                        |
+// |  2  |         |                        |
+// |     |         |                        |
+//  ----------------------------------------
 //
 // #Hint: See Fibonacci sequence #Ref: http://oeis.org/A000045
 //
