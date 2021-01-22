@@ -35,7 +35,6 @@ function dayOfWeek(birthdayDate) {
   const dayOfWeek = new Date(birthdayDate).getDay();
 
   let nextDayOfWeek = null;
-  let i = 1;
   for (let i = 1; ; i++) {
     let nextBirthdayDate = new Date(+year + i, month - 1, day);
     const nextMonth = nextBirthdayDate.getMonth();
