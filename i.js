@@ -123,3 +123,27 @@
 
 // showName('first');
 
+// func = (...a) => {
+//   let sum = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     sum += a[i];
+//   }
+//   return sum;
+// };
+//
+// console.log(func(1, 2, 3, 4, 5));
+
+// let str = "Привет";
+// console.log( ...str );
+
+// let str = "Привет";
+// let arr = [];
+// for (let s of str) {
+//   arr.push(s);
+// }
+//
+// console.log(arr);
+
+// let str = "Привет";
+// console.log(Array.from(str));
+
