@@ -17,3 +17,13 @@ function convert(time){
 
   return `${hours}:${minutes}:${seconds},${milliseconds}`;
 }
+
+function convert(time){
+  const date = new Date(time);
+
+  function transform(value, count) {
+    return value.toString().padStart(count, '0');
+  }
+
+  return `${transform(date.getHours(), 2)}:${transform(date.getMinutes(), 2)}:${transform(date.getSeconds(), 2)},${transform(date.getMilliseconds(), 3)}`;
+}
