@@ -13,6 +13,5 @@
 // string = "Visca ElbarcaXxX" and c = "X" => "Visca Elbarca"
 
 String.prototype.trim = function(c = ' ') {
-  return this
-    .replace(new RegExp(`^${c}{1,}|${c}{1,}$`, 'gi'), '')
-}
+  return this.replace(new RegExp(`^${c}{1,}|${c}{1,}$`, 'gi'), '');
+};
