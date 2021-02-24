@@ -13,3 +13,7 @@ function vowel2index(str) {
   const letters = 'aeiou';
   return str.split('').map((a, i) => letters.indexOf(a.toLowerCase()) > -1 ? i + 1 : a).join('');
 }
+
+function vowel2index(str) {
+  return str.replace(/[aeiou]/gi, (a, i) => i + 1);
+}
